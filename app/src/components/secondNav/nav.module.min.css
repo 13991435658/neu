@@ -1,0 +1,1 @@
+.nav{background-color:#c20c0c;height:30px}.nav .content{display:flex}.navitem{line-height:25px}.navitem a{display:inline-block;color:#fff;margin:0 14px;padding:0 14px;font-size:13px;height:24px;border-radius:12px}.navitem:hover a,.navitem .active{background-color:rgba(150,147,147,0.726)}

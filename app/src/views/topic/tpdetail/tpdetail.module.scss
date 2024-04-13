@@ -1,0 +1,132 @@
+body {
+    overflow: auto;
+}
+
+.tpdetailBox {
+    margin: 20px auto;
+    display: flex;
+    gap: 20px;
+
+    :global {
+        .tpdcontent {
+            flex: 1;
+            box-sizing: border-box;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            padding: 10px 50px;
+            position: relative;
+        }
+
+        .tpdtitle {
+            font-size: 22px;
+            line-height: 30px;
+            font-weight: 700;
+            border-bottom: 1px solid #eaeaea;
+            position: sticky;
+            top: 0;
+            padding: 10px;
+            background-color: #fff;
+            box-sizing: border-box;
+            z-index: 999999;
+        }
+
+        .tpdtips {
+            height: 46px;
+            text-align: center;
+            line-height: 46px;
+            color: gray;
+            margin-top: 10px;
+            border-bottom: 1px solid #eaeaea;
+            box-shadow: #d6d6d6 0 0 5px;
+            cursor: pointer;
+
+            &:hover {
+                color: #0869e7;
+            }
+        }
+
+        .tpdhtml {
+            padding: 10px;
+            box-sizing: border-box;
+            border-bottom: 1px solid #eaeaea;
+
+            &::-webkit-scrollbar-thumb {
+                background-color: #fff
+            }
+
+            box-sizing: border-box;
+
+            img {
+                max-width: 100%;
+            }
+        }
+
+        .publish {
+            display: flex;
+            margin-top: 200px;
+            .editor {
+                flex: 1;
+            }
+
+            .btn1 {
+                height: 56px;
+                margin-top: 40px;
+                opacity: 0.3;
+                cursor: default;
+            }
+
+            .btn2 {
+                opacity: 1;
+                cursor: pointer;
+            }
+        }
+
+        .tpdright {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            position: sticky;
+            align-self: flex-start;
+            top: 0;
+        }
+
+        .comment {
+            border: 1px solid #eaeaea;
+            p{
+                padding: 0;
+                margin: 0;
+            }
+            .commenttop {
+                font-weight: 700;
+                padding: 16px;
+                border-bottom: 1px solid #eaeaea;
+            }
+
+            .commentmiddle {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                padding: 20px;
+            }
+            .commentbottom{
+                text-align: center;
+                color: gray;
+                padding-top: 20px;
+                border-top: 1px solid #f0f0f0;
+            }
+        }
+
+        .tpdusercard {
+            width: 300px;
+            height: 200px;
+            background-color: #fff;
+        }
+
+        .tpdrecommend {
+            width: 300px;
+            height: 500px;
+            background-color: #fff;
+        }
+    }
+}

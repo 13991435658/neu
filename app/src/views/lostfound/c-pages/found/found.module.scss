@@ -1,0 +1,72 @@
+.foundBox {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 10px 50px;
+    box-sizing: border-box;
+    position: relative;
+
+    :global {
+        .fboxtop {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: sticky;
+            top: 0;
+            background-color: #fff;
+            border-bottom: 1px solid #f0f0f0;
+            z-index: 999;
+            .losttitle {
+                padding: 0 25px;
+            }
+        }
+
+        .itemcontent {
+            display: flex;
+            gap: 10px;
+            flex-direction: column;
+            width: 500px;
+
+            span {
+                color: gray;
+                font-weight: bold;
+            }
+
+            .ictop {
+                display: flex;
+                justify-content: space-between;
+
+                .ictright {
+                    cursor: pointer;
+
+                    &:hover {
+                        opacity: 0.8;
+                    }
+                }
+
+                .lost {
+                    color: rgb(228, 21, 21);
+                }
+
+                .found {
+                    color: #1e80ff;
+                }
+            }
+
+            .icbottom {
+                display: flex;
+                justify-content: space-between;
+
+                .icbright {
+                    color: #666;
+                    opacity: 0.6;
+                    cursor: pointer;
+
+                    &:hover {
+                        opacity: 0.8;
+                    }
+                }
+            }
+        }
+    }
+}

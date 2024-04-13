@@ -1,0 +1,120 @@
+.gdBox :global .gdetailcardBox {
+  width: 85%;
+  margin: 50px auto 20px;
+  padding: 20px;
+  display: flex;
+  gap: 30px;
+  box-shadow: 1px 1px 8px #dbdbdb;
+  border-radius: 30px;
+}
+
+.gdBox :global .gdetailcardBox .gdcleft {
+  width: 300px;
+  height: 300px;
+}
+
+.gdBox :global .gdetailcardBox .gdcright {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  width: 320px;
+  height: 300px;
+}
+
+.gdBox :global .gdetailcardBox .gdcright span {
+  color: #666;
+  font-size: 14px;
+  opacity: 0.8;
+  width: 80px;
+}
+
+.gdBox :global .gdetailcardBox .gdcright .gdctitle {
+  display: flex;
+  align-items: center;
+  width: 95%;
+  margin-bottom: 20px;
+}
+
+.gdBox :global .gdetailcardBox .gdcright .gdctitle .titlenew {
+  display: inline-block;
+  background-color: #fd0136;
+  padding-right: 2px;
+  margin-right: 7px;
+  color: #fff;
+  font: italic normal 16px '';
+}
+
+.gdBox :global .gdetailcardBox .gdcright .gdctitle .titletext {
+  font-weight: 600;
+  height: 50px;
+  line-height: 25px;
+  width: 100%;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+}
+
+.gdBox :global .gdetailcardBox .gdcright .gdcrow {
+  font-size: 15px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+}
+
+.gdBox :global .gdetailcardBox .gdcright .gdcrow .gdcprice {
+  color: #ff5000;
+  font: normal 700 22px '';
+}
+
+.gdBox :global .gdetailcardBox .gdcright .gdcrow .gdcnewdegree {
+  opacity: 0.8;
+}
+
+.gdBox :global .gdetailcardBox .gdcright .gdcrow .gdcaddress {
+  color: #1e80ff;
+  cursor: pointer;
+}
+
+.gdBox :global .gdetailcardBox .gdcright .gdcrow .gdcaddress:hover {
+  text-decoration: underline;
+}
+
+.gdBox :global .gdetailcardBox .gdcright .gdcrow .gdctime {
+  color: #666;
+  font-size: 14px;
+}
+
+.gdBox :global .gdetailcardBox .gdcright .gdcrow .gdccategory {
+  font-size: 14px;
+  height: 28px;
+  width: 70px;
+  background-color: #fafbfd;
+  border: 1px solid #b9b9b9;
+  opacity: 0.8;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.gdBox :global .gdetailcardBox .gdcright .gdcrow .gdccategory:hover {
+  background-color: #eef2fc;
+}
+
+.gdBox :global .gdetailcardBox .gdcright .gdcrow .gdcremark {
+  opacity: 0.8;
+}
+
+.gdBox :global .gdcremarkBox {
+  width: 85%;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 1px 1px 8px #dbdbdb;
+  border-radius: 30px;
+  color: #666;
+  font-size: 15px;
+  line-height: 20px;
+}

@@ -1,0 +1,30 @@
+.goodsBox :global .content {
+  background-color: #fff;
+  height: 1400px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.goodsBox :global .content .neuv1 {
+  background-color: #fff;
+  margin-top: 20px;
+  width: 90%;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.goodsBox :global .content .goodscards {
+  width: 90%;
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.goodsBox :global .content .pagination {
+  margin-top: 20px;
+}

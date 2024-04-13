@@ -1,0 +1,23 @@
+.nav {
+    background-color: #c20c0c;
+    height: 30px;
+    .content{
+        display: flex;
+    }
+}
+
+.navitem{
+    line-height: 25px;
+    a{
+        display: inline-block;
+        color: #fff;
+        margin: 0 14px;
+        padding: 0 14px;
+        font-size: 13px;
+        height: 24px;
+        border-radius: 12px;
+    }
+    &:hover a, .active{
+        background-color: rgba(150, 147, 147, 0.726);
+    }
+}

@@ -1,0 +1,1 @@
+.centerBox :global .content{margin-top:20px;display:flex;justify-content:space-between;height:700px}.centerBox :global .left{background-color:#fff;width:760px;height:600px}.centerBox :global .right{display:flex;flex-direction:column;gap:20px}.centerBox :global .bottom{background-color:#fff;width:300px;height:390px}

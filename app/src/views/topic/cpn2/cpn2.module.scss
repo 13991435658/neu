@@ -1,0 +1,53 @@
+.topicRankBox {
+    padding: 20px;
+    width: 300px;
+    height: 500px;
+    background-color: #fff;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    .title {
+        font-weight: 700;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .alltopic {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        overflow: hidden;
+        flex: 1;
+    }
+
+    .topicitem {
+        display: flex;
+        gap: 15px;
+    }
+
+    .topichot1 {
+        line-height: 24px;
+        font-weight: 700;
+        color: rgb(238, 104, 9);
+    }
+    .topichot2 {
+        line-height: 24px;
+        font-weight: 700;
+        color: rgb(156, 154, 154);
+    }
+
+    .topictext {
+        cursor: pointer;
+        line-height: 24px;
+        font-size: 15px;
+        word-break: break-all;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        &:hover{
+            color: #093e8b;
+        }
+    }
+}

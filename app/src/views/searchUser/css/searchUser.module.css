@@ -1,0 +1,124 @@
+.searchUserBox :global .content {
+  position: relative;
+  background-color: #fff;
+  height: 500px;
+  margin-top: 20px;
+}
+
+.searchUserBox :global .content .searchbox {
+  height: 100px;
+  margin: 0 auto;
+  width: 600px;
+}
+
+.searchUserBox :global .content .searchInput {
+  margin: 30px 0;
+  width: 580px;
+}
+
+.searchUserBox :global .content .reText {
+  width: 80px;
+  margin: 0 auto;
+  font-size: 12px;
+  color: #666;
+  cursor: pointer;
+}
+
+.searchUserBox :global .content .pagination {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  width: 200px;
+  margin: 0 auto;
+}
+
+.searchUserBox :global .result {
+  display: flex;
+  flex-wrap: wrap;
+  width: 730px;
+  margin: 0 auto;
+}
+
+.searchUserBox :global .result .usercard {
+  width: 200px;
+  display: flex;
+  padding: 10px;
+  margin: 10px;
+}
+
+.searchUserBox :global .result .usercard:hover {
+  box-shadow: 1px 1px 3px #ccc;
+}
+
+.searchUserBox :global .cardright {
+  display: flex;
+  margin-left: 15px;
+  flex-direction: column;
+  height: 70px;
+  justify-content: space-between;
+}
+
+.searchUserBox :global .cardright .username {
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.searchUserBox :global .cardright .username:hover {
+  text-decoration: underline;
+}
+
+.searchUserBox :global .cardright .occupation {
+  display: flex;
+  font-size: 14px;
+  color: #666;
+}
+
+.searchUserBox :global .cardright .follow {
+  width: 70px;
+  background-color: #59a9ec;
+}
+
+.searchUserBox :global .cardright .follow:hover {
+  background-color: #009bdb;
+}
+
+.searchUserBox :global .cardright .followed {
+  width: 80px;
+  background-color: #666;
+  opacity: 0.4;
+}
+
+.searchUserBox :global .cardright .followed:hover {
+  opacity: 0.6;
+}
+
+.searchUserBox :global .cardright .fans {
+  width: 90px;
+  background-color: chocolate;
+  opacity: 0.4;
+}
+
+.searchUserBox :global .cardright .fans:hover {
+  opacity: 0.6;
+}
+
+.searchUserBox :global .cardright .friend {
+  background-color: #ff1493;
+  opacity: 0.3;
+  width: 90px;
+}
+
+.searchUserBox :global .cardright .friend:hover {
+  opacity: 0.5;
+}
+
+.searchUserBox :global .cardright .ship {
+  color: #fff;
+  font-size: 14px;
+  height: 20px;
+  border-radius: 5px;
+  line-height: 20px;
+  text-align: center;
+  cursor: pointer;
+}

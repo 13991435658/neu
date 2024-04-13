@@ -1,0 +1,39 @@
+.tpcommentBox {
+  display: flex;
+  flex-direction: column;
+}
+
+.tpcommentBox .top {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  gap: 10px;
+}
+
+.tpcommentBox .middle {
+  padding-left: 40px;
+  line-height: 24px;
+}
+
+.tpcommentBox .middle img {
+  display: block;
+  max-height: 150px;
+}
+
+.tpcommentBox .bottom {
+  margin-top: 8px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 40px;
+  color: #75849a;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.tpcommentBox .bottom div {
+  cursor: pointer;
+}
+
+.tpcommentBox .bottom div:hover {
+  opacity: 0.6;
+}

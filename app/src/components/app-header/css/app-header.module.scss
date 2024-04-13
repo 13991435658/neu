@@ -1,0 +1,119 @@
+.nav {
+    height: 75px;
+    background-color: #242424;
+    font-size: 14px;
+  
+    .content {
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+  
+  .nav .content .left {
+    display: flex;
+  
+    .logo {
+      width: 180px;
+      height: 70px;
+      background: url('~@/assets/img/logo1.png');
+      background-size: 100%;
+      text-indent: -9999px; //seo优化
+    }
+  
+    .navlist {
+      display: flex;
+    }
+  }
+  
+  .navitem {
+    position: relative;
+    line-height: 70px;
+    a{
+      display: block;
+      height: 100%;
+      padding: 0 20px;
+      color: #ccc;
+    }
+    &:hover a, .active {
+      background-color: #000;
+      color: #fff;
+    }
+    .active .icon{
+      position: absolute;
+      background: url('~@/assets/img/sprite_01.png') no-repeat -226px 0;
+      width: 12px;
+      height: 7px;
+      bottom: -1px;
+      left: 50%;
+      transform: translate(-50%,0);
+    }
+  }
+  
+  .divider{
+    height: 5px;
+    background-color: #c20c0c;
+  }
+  
+  .nav .content .right{
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    .search{
+      border-radius: 16px;
+      width: 158px;
+      height: 32px;
+    }
+    input{
+      &::placeholder{
+        font-size: 12px;
+      }
+    }
+    .center{
+      color: #ccc;
+      width: 100px;
+      height: 32px;
+      line-height: 32px;
+      border: 1px solid #666;
+      text-align: center;
+      border-radius: 16px;
+      margin: 0 16px;
+      &:hover{
+        border: 1px solid #ccc;
+        color:#fff
+      }
+    }
+    .login{
+      color: #ccc;
+      &:hover{
+        color: #666;
+        text-decoration: underline #666;
+      }
+    }
+  }
+
+  .info{
+    display: flex;
+    align-items: center;
+    :global{
+      .infospan{
+        height: 40px;
+        margin-left: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        .top{
+          font-size: 14px;
+          color: #ccc;
+        }
+        .bottom{
+          color: #666;
+        }
+      }
+      .icon span{
+        cursor: pointer;
+        font-size: 28px;
+        margin-left: 20px;
+        color: #ccc;
+      }
+    }
+  }

@@ -1,0 +1,52 @@
+.centerBox {
+    :global {
+        .content {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            height: 700px;
+        }
+
+        .left {
+            background-color: #fff;
+            width: 760px;
+            height: 600px;
+        }
+
+        .right {
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .bottom {
+            overflow: overlay;
+            height: 390px;
+            background-color: #fff  ;
+            &::-webkit-scrollbar {
+                display: none;
+            }
+
+            &:hover::-webkit-scrollbar {
+                display: block;
+            }
+
+            .bottomcontain {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background-color: #fff;
+                width: 300px;
+                flex-shrink: 0;
+
+                .otherBoxtitle {
+                    padding: 15px 0 10px;
+                    color: #ca1c39;
+                    font-weight: 700;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}

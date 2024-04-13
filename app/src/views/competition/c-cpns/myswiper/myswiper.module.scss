@@ -1,0 +1,33 @@
+.swiperBox{
+    position: relative;
+}
+.carousel{
+    img{
+        width: 800px;
+        height: 350px;
+    }
+    width: 800px;
+    height: 400px;
+}
+
+.arrow{
+    position: absolute;
+    background-color:gray;
+    opacity: 0.3;
+    color: white;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+}
+.right{
+    top: 46%;
+    right:-60px
+}
+.left{
+    top: 46%;
+    left:-60px;
+}

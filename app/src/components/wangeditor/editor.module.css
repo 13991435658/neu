@@ -1,0 +1,29 @@
+.editorBox {
+  display: flex;
+  gap: 10px;
+}
+
+.editorBox .avatar {
+  margin-top: 40px;
+}
+
+.editorBox .editorInput {
+  flex: 1;
+}
+
+.editorBox .toolbar {
+  position: sticky;
+  top: 0;
+  right: 0;
+  z-index: 99;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.editorBox .editor {
+  border-bottom: 1px solid #eaeaea;
+  margin-bottom: 20px;
+}
+
+.editorBox .editor img {
+  max-width: 200px;
+}

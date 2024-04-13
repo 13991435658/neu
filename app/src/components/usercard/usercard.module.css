@@ -1,0 +1,79 @@
+.userinfocard {
+  padding: 20px;
+  background-color: #fff;
+  width: 260px;
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+}
+
+.userinfocard :global .usertop {
+  height: 50px;
+  display: flex;
+}
+
+.userinfocard :global .usermiddle {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+  height: 45px;
+}
+
+.userinfocard :global .userbottom {
+  margin-top: 20px;
+  display: flex;
+}
+
+.userinfocard :global .btn1 {
+  color: #fff;
+  background-color: #1e80ff;
+  border: 1px solid #1e80ff;
+  flex: 1;
+}
+
+.userinfocard :global .btn1:hover {
+  background-color: #1171ee;
+}
+
+.userinfocard :global .btn2 {
+  background-color: #fafbfd;
+  border: 1px solid #abcdff;
+  color: #1e80ff;
+  margin-left: 15px;
+}
+
+.userinfocard :global .btn2:hover {
+  border: 1px solid #abcdff;
+  background-color: #eaf2ff;
+}
+
+.userinfocard :global .btn {
+  font-size: 14px;
+  width: 120px;
+  height: 35px;
+  border-radius: 5px;
+  line-height: 35px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.userinfocard :global .infospan {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.userinfocard :global .infospan .infotop {
+  font-size: 15px;
+}
+
+.userinfocard :global .infospan .infobottom {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #8a919f;
+}
+
+.userinfocard :global .center {
+  align-items: center;
+}

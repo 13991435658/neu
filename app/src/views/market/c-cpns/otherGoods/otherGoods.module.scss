@@ -1,0 +1,68 @@
+.otherGoodsBox {
+    display: flex;
+    gap: 10px;
+    padding: 8px;
+    width: 90%;
+    margin-top: 5px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 8px #dbdbdb;
+    justify-content: center;
+    cursor: pointer;
+    &:hover{
+        background-color: #f1f1f1;
+    }
+    :global {
+        img {
+            width: 60px;
+            height: 60px;
+        }
+
+        .ogright {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .ogtop {
+                display: flex;
+                align-items: center;
+
+                .ognew {
+                    display: inline-block;
+                    background-color: #fd0136;
+                    padding-right: 3px;
+                    margin-right: 5px;
+                    color: #fff;
+                    font: italic normal 13px '';
+                }
+
+                .ogtitle {
+                    font-weight: 600;
+                    height: 36px;
+                    line-height: 18px;
+                    width: 100%;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 2;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    word-break: break-all;
+                    font-size: 14px;
+                }
+            }
+
+            .ogprice {
+                color: #ff5000;
+                font-weight: 600;
+                display: flex;
+                justify-content: space-between;
+                span{
+                    font-size: 12px;
+                    font-weight: normal;
+                    color: #ccc;
+                    line-height: 18px;
+                }
+            }
+        }
+    }
+}

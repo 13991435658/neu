@@ -1,0 +1,123 @@
+.gdBox{
+    :global{
+        .gdetailcardBox {
+            width: 85%;
+            margin: 50px auto 20px;
+            padding: 20px;
+            display: flex;
+            gap: 30px;
+            box-shadow: 1px 1px 8px #dbdbdb;
+            border-radius: 30px;
+        
+            .gdcleft {
+                width: 300px;
+                height: 300px;
+            }
+        
+            .gdcright {
+                display: flex;
+                flex-direction: column;
+                gap: 18px;
+                width: 320px;
+                height: 300px;
+        
+                span {
+                    color: #666;
+                    font-size: 14px;
+                    opacity: 0.8;
+                    width: 80px;
+                }
+        
+                .gdctitle {
+                    display: flex;
+                    align-items: center;
+                    width: 95%;
+                    margin-bottom: 20px;
+        
+                    .titlenew {
+                        display: inline-block;
+                        background-color: #fd0136;
+                        padding-right: 2px;
+                        margin-right: 7px;
+                        color: #fff;
+                        font: italic normal 16px '';
+                    }
+        
+                    .titletext {
+                        font-weight: 600;
+                        height: 50px;
+                        line-height: 25px;
+                        width: 100%;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 2;
+                        -webkit-box-orient: vertical;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        word-break: break-all;
+                    }
+                }
+        
+                .gdcrow {
+                    font-size: 15px;
+                    height: 25px;
+                    display: flex;
+                    align-items: center;
+        
+                    .gdcprice {
+                        color: #ff5000;
+                        font: normal 700 22px '';
+                    }
+        
+                    .gdcnewdegree {
+                        opacity: 0.8;
+                    }
+        
+                    .gdcaddress {
+                        color: #1e80ff;
+                        cursor: pointer;
+        
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+        
+                    .gdctime {
+                        color: #666;
+                        font-size: 14px;
+                    }
+        
+                    .gdccategory {
+                        font-size: 14px;
+                        height: 28px;
+                        width: 70px;
+                        background-color: #fafbfd;
+                        border: 1px solid rgb(185, 185, 185);
+                        opacity: 0.8;
+                        line-height: 30px;
+                        text-align: center;
+                        border-radius: 8px;
+                        cursor: pointer;
+        
+                        &:hover {
+                            background-color: #eef2fc;
+                        }
+                    }
+        
+                    .gdcremark {
+                        opacity: 0.8;
+                    }
+                }
+            }
+        }
+        .gdcremarkBox{
+            width: 85%;
+            margin: 0 auto;
+            padding: 20px;
+            box-shadow: 1px 1px 8px #dbdbdb;
+            border-radius: 30px;
+            color: #666;
+            font-size: 15px;
+            line-height:20px;
+        }
+    }
+}

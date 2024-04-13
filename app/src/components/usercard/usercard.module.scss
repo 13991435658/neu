@@ -1,0 +1,78 @@
+.userinfocard {
+    padding: 20px;
+    background-color: #fff;
+    width: 260px;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    :global{
+        .usertop {
+            height: 50px;
+            display: flex;
+        }
+    
+        .usermiddle {
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-around;
+            height: 45px;
+        }
+    
+        .userbottom {
+            margin-top: 20px;
+            display: flex;
+        }
+    
+        .btn1 {
+            color: #fff;
+            background-color: #1e80ff;
+            border: 1px solid #1e80ff;
+            flex: 1;
+            &:hover {
+                background-color: #1171ee;
+            }
+        }
+    
+        .btn2 {
+            background-color: #fafbfd;
+            border: 1px solid #abcdff;
+            color: #1e80ff;
+            margin-left: 15px;
+            &:hover {
+                border: 1px solid #abcdff;
+                background-color: #eaf2ff;
+            }
+        }
+    
+        .btn {
+            font-size: 14px;
+            width: 120px;
+            height: 35px;
+            border-radius: 5px;
+            line-height: 35px;
+            text-align: center;
+            cursor: pointer;
+        }
+    
+        .infospan {
+            margin-left: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+    
+            .infotop {
+                font-size: 15px;
+            }
+    
+            .infobottom {
+                margin-top: 5px;
+                font-size: 14px;
+                color: #8a919f;
+            }
+        }
+    
+        .center {
+            align-items: center;
+        }
+    }
+}

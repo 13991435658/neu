@@ -1,0 +1,9 @@
+.btn{
+    border: 0;
+    background-color: white;
+    cursor: pointer;
+    color:#1890ff;
+    &:hover{
+        color: cornflowerblue;
+    }
+}

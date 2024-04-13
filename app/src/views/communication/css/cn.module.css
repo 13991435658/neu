@@ -1,0 +1,261 @@
+.cnBox :global .content {
+  display: flex;
+  height: 500px;
+  margin-top: 20px;
+  box-shadow: 1px 1px 5px #8a919f;
+}
+
+.cnBox :global .side {
+  width: 60px;
+  background-color: #2e2e2e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cnBox :global .side .avatar {
+  height: 80px;
+  line-height: 80px;
+}
+
+.cnBox :global .side .nav {
+  width: 100%;
+  line-height: 100px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.cnBox :global .side .nav span {
+  color: gray;
+  font-size: 25px;
+}
+
+.cnBox :global .side .nav:hover {
+  background-color: #1a1a1a;
+  opacity: 0.8;
+}
+
+.cnBox :global .side .nav:hover span {
+  color: #07c160;
+}
+
+.cnBox :global .side .navclick {
+  background-color: #1a1a1a;
+}
+
+.cnBox :global .side .navclick span {
+  color: #07c160;
+}
+
+.cnBox :global .cnleft {
+  width: 300px;
+  display: flex;
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  flex-direction: column;
+  background-color: #eaeaea;
+  overflow-y: scroll;
+  position: relative;
+}
+
+.cnBox :global .cnleft::-webkit-scrollbar {
+  display: none;
+}
+
+.cnBox :global .cnleft:hover::-webkit-scrollbar {
+  display: block;
+}
+
+.cnBox :global .cnleft .ltop {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background-color: #eaeaea;
+  height: 50px;
+  width: 290px;
+  border-bottom: 1px solid #d8d7d7;
+  color: #2e2e2e;
+  text-align: center;
+  line-height: 55px;
+}
+
+.cnBox :global .cnleft .ltop span {
+  color: gray;
+  font-size: 25px;
+}
+
+.cnBox :global .cnleft .friend {
+  display: flex;
+  width: 290px;
+  padding: 10px 0 10px 10px;
+  box-sizing: border-box;
+  cursor: default;
+}
+
+.cnBox :global .cnleft .friend:hover {
+  background-color: #d8d7d7;
+}
+
+.cnBox :global .cnleft .friendinfo {
+  position: relative;
+  flex: 1;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.cnBox :global .cnleft .friendinfo .itop {
+  display: flex;
+  font-size: 14px;
+  justify-content: space-between;
+}
+
+.cnBox :global .cnleft .friendinfo .itop .tr {
+  font-size: 12px;
+  color: #666;
+}
+
+.cnBox :global .cnleft .friendinfo .ibottom {
+  font-size: 13px;
+  color: #8a919f;
+  cursor: pointer;
+  max-width: 180px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.cnBox :global .cnleft .friendinfo .badge {
+  position: absolute;
+  top: 28px;
+  right: 10px;
+}
+
+.cnBox :global .cnright {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ccc;
+  background-color: #f5f5f5;
+}
+
+.cnBox :global .cnright .userdtop {
+  width: 200px;
+  padding: 20px 50px;
+  border-bottom: 1px solid #d8d7d7;
+  display: flex;
+}
+
+.cnBox :global .cnright .dspan {
+  margin-left: 10px;
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.cnBox :global .cnright .dspan .dtop {
+  font-size: 15px;
+}
+
+.cnBox :global .cnright .dspan .doccupation {
+  display: flex;
+  font-size: 14px;
+  color: #666;
+}
+
+.cnBox :global .cnright .userdbottom {
+  width: 300px;
+  height: 100px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.cnBox :global .cnright .userdbottom .dbtn {
+  cursor: pointer;
+  padding: 5px;
+  width: 70px;
+  height: 60px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #8686e0;
+  opacity: 0.8;
+}
+
+.cnBox :global .cnright .userdbottom .dbtn:hover {
+  background-color: #e7e7e7;
+}
+
+.cnBox :global .cnright .userdbottom .dbtn span {
+  font-size: 25px;
+}
+
+.cnBox :global .cnright .userdbottom .dbtn div {
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+.cnBox :global .msgright {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  background-color: #f5f5f5;
+}
+
+.cnBox :global .msgright .mtop {
+  height: 50px;
+  border-bottom: 1px solid #dfdddd;
+  line-height: 50px;
+  padding-left: 15px;
+}
+
+.cnBox :global .msgright .mmiddle {
+  flex: 1;
+  overflow-y: scroll;
+}
+
+.cnBox :global .msgright .mmiddle .nomsg {
+  text-align: center;
+  font-size: 12px;
+  color: #666;
+  opacity: 0.8;
+}
+
+.cnBox :global .msgright .mbottom {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 160px;
+  border-top: 1px solid #dfdddd;
+}
+
+.cnBox :global .msgright .mbottom .operation {
+  padding-left: 20px;
+}
+
+.cnBox :global .msgright .mbottom .ta {
+  background-color: #f5f5f5;
+  padding: 5px 0 0 20px;
+  border: none;
+  outline: none;
+  resize: none;
+}
+
+.cnBox :global .msgright .mbottom .send {
+  position: absolute;
+  right: 20px;
+  bottom: 10px;
+}
+
+.cnBox :global .empty {
+  width: 270px;
+  margin-top: 100px;
+}

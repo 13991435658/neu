@@ -1,0 +1,64 @@
+.neuv1Box {
+  height: 33px;
+  border-bottom: 2px solid #C10D0C;
+  padding: 0 10px 4px 34px;
+  background: url("~@/assets/img/sprite_02.png") no-repeat -225px -156px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  color: gray;
+}
+
+.neuv1Box :global .v1left {
+  display: flex;
+  align-items: center;
+}
+
+.neuv1Box :global .v1left .v1title {
+  font-size: 20px;
+  font-family: "Microsoft Yahei", Arial, Helvetica, sans-serif;
+  color: black;
+  margin-right: 20px;
+  opacity: 0.7;
+}
+
+.neuv1Box :global .v1left .keyword {
+  display: flex;
+  font-size: 12px;
+}
+
+.neuv1Box :global .v1left .keyword .item .link:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.neuv1Box :global .v1left .keyword .item .divider {
+  margin: 0 15px;
+  color: #ccc;
+}
+
+.neuv1Box :global .v1left .keyword .item:last-child .divider {
+  display: none;
+}
+
+.neuv1Box :global .v1right {
+  display: flex;
+  align-items: center;
+}
+
+.neuv1Box :global .v1right a {
+  color: gray;
+}
+
+.neuv1Box :global .v1right a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.neuv1Box :global .v1right .v1icon {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-left: 4px;
+  background: url("~@/assets/img/sprite_02.png") no-repeat 0 -240px;
+}

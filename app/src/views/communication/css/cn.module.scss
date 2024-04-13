@@ -1,0 +1,264 @@
+.cnBox {
+    :global {
+        .content {
+            display: flex;
+            height: 500px;
+            margin-top: 20px;
+            box-shadow: 1px 1px 5px #8a919f;
+        }
+
+        .side {
+            width: 60px;
+            background-color: #2e2e2e;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .avatar {
+                height: 80px;
+                line-height: 80px;
+            }
+
+            .nav {
+                // flex: 1;
+                width: 100%;
+                line-height: 100px;
+                text-align: center;
+                cursor: pointer;
+
+                span {
+                    color: gray;
+                    font-size: 25px;
+                }
+
+                &:hover {
+                    background-color: #1a1a1a;
+                    opacity: 0.8;
+
+                    span {
+                        color: #07c160;
+                    }
+                }
+            }
+
+            .navclick {
+                background-color: #1a1a1a;
+
+                span {
+                    color: #07c160;
+                }
+            }
+        }
+
+        .cnleft {
+            width: 300px;
+            display: flex;
+            border-bottom: 1px solid #ccc;
+            border-top: 1px solid #ccc;
+            flex-direction: column;
+            background-color: #eaeaea;
+            overflow-y: scroll;
+            position: relative;
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
+
+            &:hover::-webkit-scrollbar {
+                display: block;
+            }
+
+            .ltop {
+                position: sticky;
+                top: 0;
+                z-index: 999;
+                background-color: #eaeaea;
+                height: 50px;
+                width: 290px;
+                border-bottom: 1px solid #d8d7d7;
+                color: #2e2e2e;
+                text-align: center;
+                line-height: 55px;
+
+                span {
+                    color: gray;
+                    font-size: 25px;
+                }
+            }
+
+            .friend {
+                display: flex;
+                width: 290px;
+                padding: 10px 0 10px 10px;
+                box-sizing: border-box;
+                cursor: default;
+
+                &:hover {
+                    background-color: #d8d7d7;
+                }
+            }
+
+            .friendinfo {
+                position: relative;
+                flex: 1;
+                margin-left: 10px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+
+                .itop {
+                    display: flex;
+                    font-size: 14px;
+                    justify-content: space-between;
+                    .tr{
+                        font-size: 12px;
+                        color: #666;
+                    }
+                }
+
+                .ibottom {
+                    
+                    font-size: 13px;
+                    color: #8a919f;
+                    cursor: pointer;
+                    max-width: 180px;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis
+                }
+                .badge{
+                    position: absolute;
+                    top: 28px;
+                    right: 10px;
+                }
+
+            }
+        }
+
+        .cnright {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            background-color: #f5f5f5;
+
+            .userdtop {
+                width: 200px;
+                padding: 20px 50px;
+                border-bottom: 1px solid #d8d7d7;
+                display: flex;
+            }
+
+            .dspan {
+                margin-left: 10px;
+                height: 70px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+
+                .dtop {
+                    font-size: 15px;
+                }
+
+                .doccupation {
+                    display: flex;
+                    font-size: 14px;
+                    color: #666;
+                }
+            }
+
+            .userdbottom {
+                width: 300px;
+                height: 100px;
+                margin-top: 10px;
+                display: flex;
+                justify-content: space-around;
+
+                .dbtn {
+                    cursor: pointer;
+                    padding: 5px;
+                    width: 70px;
+                    height: 60px;
+                    padding: 5px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    color: rgb(134, 134, 224);
+                    opacity: 0.8;
+
+                    &:hover {
+                        background-color: #e7e7e7;
+                    }
+
+                    span {
+                        font-size: 25px;
+                    }
+
+                    div {
+                        margin-top: 8px;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+
+        .msgright {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid #ccc;
+            background-color: #f5f5f5;
+
+            .mtop {
+                height: 50px;
+                border-bottom: 1px solid #dfdddd;
+                line-height: 50px;
+                padding-left: 15px;
+            }
+
+            .mmiddle {
+                flex: 1;
+                overflow-y: scroll;
+
+                .nomsg {
+                    text-align: center;
+                    font-size: 12px;
+                    color: #666;
+                    opacity: 0.8;
+                }
+            }
+
+            .mbottom {
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                height: 160px;
+                border-top: 1px solid #dfdddd;
+                .operation{
+                    padding-left: 20px;
+                }
+                .ta {
+                    background-color: #f5f5f5;
+                    padding: 5px 0 0 20px;
+                    border: none;
+                    outline: none;
+                    resize: none; //右下角的角
+                }
+
+                .send {
+                    position: absolute;
+                    right: 20px;
+                    bottom: 10px;
+                }
+            }
+        }
+
+        .empty {
+            width: 270px;
+            margin-top: 100px;
+        }
+    }
+}

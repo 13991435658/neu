@@ -14,6 +14,7 @@ const lostfoundRouter = require('./routes/lostfound')
 var topicRouter = require('./routes/topic')
 var uploadImgRouter = require('./routes/uploadImg');
 const RefreshToken = require('./middlewares/RefreshToken');
+const { decode } = require('jsonwebtoken');
 
 var app = express();
 app.use(bodyParser.json())
@@ -27,11 +28,27 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-
+app.use('/api/savelogin', (req, res) => {
+  const { accessToken } = req.query
+  const decoded = decode(accessToken)
+  if (decoded) {
+    delete decoded.iat
+    delete decoded.exp
+    res.send({
+      ok: 1,
+      userInfo: decoded
+    })
+  } else {
+    res.send({
+      ok: 1,
+      message: '需要登录'
+    })
+  }
+})
 app.use(loginRouter)
 app.use(registerRouter)
 app.use(uploadImgRouter)
-app.post('/api/refreshtoken',RefreshToken)
+app.post('/api/refreshtoken', RefreshToken)
 app.use(AuthMiddleware)
 app.use(userRouter)
 app.use(marketRouter)
@@ -39,12 +56,12 @@ app.use(lostfoundRouter)
 app.use(topicRouter)
 
 // catch 404 and forward to error handler
-app.use(function(req, res, next) {
+app.use(function (req, res, next) {
   next(createError(404));
 });
 
 // error handler
-app.use(function(err, req, res, next) {
+app.use(function (err, req, res, next) {
   // set locals, only providing error in development
   res.locals.message = err.message;
   res.locals.error = req.app.get('env') === 'development' ? err : {};

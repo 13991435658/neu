@@ -12,13 +12,13 @@ const Auth = (req, res, next) => {
         } else {
             res.status(401).send({
                 ok: '0',
-                message: 'token被修改,请求失败'
+                message: 'token错误,请求失败'
             })
         }
     }else{
         res.status(401).send({
             ok:'0',
-            message:'token过期了'
+            message:'请带上token'
         })
     }
 }

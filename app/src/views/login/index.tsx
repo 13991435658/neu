@@ -1,9 +1,10 @@
 import React, { memo, useEffect } from "react";
 import { Button, Form, Input} from 'antd';
 import { useDispatch, useSelector } from "react-redux";
-import { AsyncGetuserInfo } from "./store";
+import { AsyncGetuserInfo, changeUserData } from "./store";
 import { useNavigate } from "react-router-dom";
 import { RootState } from "@/store";
+import neuRequest from "@/utils/request";
 
 interface IProps { }
 
@@ -18,6 +19,13 @@ const Login: React.FC<IProps> = (props) => {
         console.log('Failed:', errorInfo);
     };
     useEffect(()=>{
+        const isSaveLogin = async () => {
+            const accessToken = localStorage.getItem('accessToken')
+            if (!accessToken) return 
+            const res = await neuRequest.get(`/api/savelogin?accessToken=${accessToken}`)
+            if (res.data.ok === 1) dispatch(changeUserData(res.data.userInfo))
+        }
+        isSaveLogin()
         Object.keys(userInfo).length && navigate('/market')
     },[userInfo])
     return (
@@ -49,7 +57,7 @@ const Login: React.FC<IProps> = (props) => {
                 </Form.Item>
                 <Form.Item wrapperCol={{ offset: 8, span: 16 }}>
                     <Button type="primary" htmlType="submit">
-                        submit
+                        登录
                     </Button>
                 </Form.Item>
 

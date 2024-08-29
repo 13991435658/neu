@@ -16,7 +16,7 @@ interface IProps {
     own: boolean
 }
 const UserCard: React.FC<IProps> = (props) => {
-    const { userId, btn1text, panel1text, panel1Num, btn1callback, btn2callback, own = false } = props
+    const { userId, btn1text = '主页', panel1text, panel1Num = 0, btn1callback, btn2callback, own = false } = props
     const loginUser = useAppSelector(state=>state.loginReducer.userInfo)
     const User = useAppSelector(state => state.searchUserReducer.allUser.filter(user => user.id === userId))
     const [followInfo, setfollowInfo] = useState<any>(null)

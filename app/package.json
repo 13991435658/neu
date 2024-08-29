@@ -70,6 +70,7 @@
     "@types/redux-persist": "^4.3.1",
     "@types/spark-md5": "^3.0.4",
     "http-proxy-middleware": "^2.0.6",
-    "mockjs": "^1.1.0"
+    "mockjs": "^1.1.0",
+    "webpack-bundle-analyzer": "^4.10.2"
   }
 }

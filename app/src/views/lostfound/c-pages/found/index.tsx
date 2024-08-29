@@ -14,7 +14,7 @@ interface IProps {
 const Found: React.FC<IProps> = (props) => {
     const loginUser = useAppSelector(state => state.loginReducer.userInfo)
     const [allitems, setallitems] = useState<any[]>([])
-    const [showitems, setshowitems] = useState<any[]>([])
+    // const [showitems, setshowitems] = useState<any[]>([])
     const containerRef = useRef<HTMLDivElement>(null)
     const containerHeight = 500
     const listItemHeight = 209

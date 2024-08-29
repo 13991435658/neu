@@ -26,7 +26,7 @@ async function refreshToken() {
         throw new Error('缺少刷新令牌');
     }
     const res = await neuRequest.post('/api/refreshtoken', { refreshToken });
-    const {newAccessToken,newRefreshToken} = res.data
+    const { newAccessToken, newRefreshToken } = res.data
     localStorage.setItem('accessToken', newAccessToken);
     localStorage.setItem('refreshToken', newRefreshToken);
     return newAccessToken;
@@ -37,12 +37,28 @@ neuRequest.interceptors.response.use(
         return response;
     },
     async (err) => {
+        let flag = false;
+        let queue: any = [];
         console.log(err)
         const response = err.response
         if (response.status !== 200) {
             if (response.status === 401 && !response.config.url.includes('refreshtoken')) {
+                if (flag) {
+                    await new Promise((resolve, reject) => {
+                        try {
+                            queue.push(resolve)
+                        } catch {
+                            reject();
+                        }
+                    })
+                }
                 try {
+                    flag = true;
                     const newAccessToken = await refreshToken();
+                    flag = false;
+                    queue.forEach((resolve: any) => {
+                        resolve();
+                    })
                     const originalRequest = response.config;
                     originalRequest.headers['authorization'] = `Bearer ${newAccessToken}`;
                     return neuRequest(originalRequest);

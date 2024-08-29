@@ -28,11 +28,10 @@ const Header: React.FC<IProps> = (props) => {
     const quit = () => {
         dispatch(clearUserInfo())
         dispatch(clearSearch())
-        sessionStorage.removeItem('token')
+        localStorage.removeItem('accessToken')
         message.success('安全退出')
         navigate('/login')
     }
-    
     const items: MenuProps['items'] = [
         {
             key: '1',

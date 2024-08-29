@@ -10,15 +10,15 @@ interface IProps {
     callback1: (html: string, isEmpty: string) => void
     toolbarKeys?: any[],
     height?: string,
-    avatar?:string,
-    placeholder?:string,
-    callback2?:any
+    avatar?: string,
+    placeholder?: string,
+    callback2?: any
 }
-const MyEditor = React.forwardRef((props:IProps,ref) => {
-    const { callback1, toolbarKeys = null, height = '300px',avatar,placeholder='请输入内容👻(●ˇ∀ˇ●)...' } = props
+const MyEditor = React.forwardRef((props: IProps, ref) => {
+    const { callback1, toolbarKeys = null, height = '300px', avatar, placeholder = '请输入内容👻(●ˇ∀ˇ●)...' } = props
     // editor 实例
     const [editor, setEditor] = useState<IDomEditor | null>(null)
-    useImperativeHandle(ref,()=>{
+    useImperativeHandle(ref, () => {
         return {
             setHtml
         }
@@ -76,7 +76,7 @@ const MyEditor = React.forwardRef((props:IProps,ref) => {
 
     return (
         <div className={styles.editorBox}>
-            {avatar && <div className={styles.avatar}><Avatar src={avatar} shape='square' size={54}/></div>}
+            {avatar && <div className={styles.avatar}><Avatar src={avatar} shape='square' size={54} /></div>}
             <div className={styles.editorInput}>
                 <div className={styles.toolbar}>
                     <Toolbar

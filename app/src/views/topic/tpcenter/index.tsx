@@ -35,6 +35,7 @@ const Topic: React.FC<IProps> = (props) => {
         supportInfo[topicId][1] ? message.success('已取消') : message.success('已赞同')
     }
     const diff = (obj1: any, obj2: any) => {
+        console.log(obj1, obj2)
         const diffres: any[] = []
         if (obj2) {
             for (let key in obj1) {

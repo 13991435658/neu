@@ -77,6 +77,7 @@ const UploadFile = (props: IProps) => {
 
 
     const uploadFile = async (file: any) => {
+        console.log(file)
         if (!file) return
         setprogressShow(true)
         //1.先获取hash
